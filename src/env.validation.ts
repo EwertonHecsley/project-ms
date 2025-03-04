@@ -17,6 +17,9 @@ class EnvironmentVariables {
     @Max(65535)
     PORT: number;
 
+    @IsString()
+    CONSUL_HOST: string;
+
     /* @IsUrl({ protocols: ['postgresql'], require_tld: false })
     DATABASE_URL: string; */
 
